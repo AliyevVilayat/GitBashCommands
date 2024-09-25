@@ -1,7 +1,6 @@
-# GitBashCommands
+# GitBash & Linux Commands
 
 ### <a href="https://git-scm.com/downloads" target="_blank"> GIT-i Endirmək üçün klikləyin</a>
-
 
 --------
 ### Hazırdaki path-i əldə etmək üçün:
@@ -33,7 +32,7 @@
 ```rm -f <fileName>```
 
 ---------
-### Hazırdaki folder daxilində folder silmək üçün:
+### Verilən folder-i və onun daxilindəki fayları silmək üçün:
 ```rm -r <folderName>```
 
 ---------
@@ -43,7 +42,6 @@
 ---------
 ### Git-in hansı versiyada olduğunu öyrənmək üçün: 
 ```git -v & git --version```
->:bulb:**Not:** CMD və GitBash-ın hər ikisində də bu command işləyir.
 
 ---------
 ### Git Repository-lər(.git file-ın yer aldığı folder-lər) daxilində edilən dəyişikliklərin(commit-lərin) hansı istifadəçi tərəfindən edildiyi məlumatlarının saxlanması üçün: 
