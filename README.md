@@ -18,6 +18,19 @@
 >:bulb:**Not:** Sadəcə cd command yazaraq olduğumuz path-dən aslılı olmayaraq User-ə qayıda bilərik.
 
 ---------
+### Hazırda olduğumuz folder daxilindəki folder və fayl-lar haqqında məlumat almaq üçün:
+```dir və ya ls```
+>:bulb:**Not:** ls -l (long listing format) vasitəsi ilə biz folder və fayllar barəsində daha ətraflı məlumat əldə edə bilərik.
+
+>:bulb:**Not:** ls -h (human readable) vasitəsi ilə biz folder və faylların ölçüləri haqqında məlumatı KB,MB,GB və s. şəklində əldə edə bilərik.
+
+>:bulb:**Not:** ls -a (all) vasitəsi ilə biz gizli fayllar da daxil olmaqla bütün folder və fayllar haqqında məlumat əldə edə bilərik.
+
+>:bulb:**Not:** ls -R (recursive) vasitəsi ilə biz folder-lərin hər birinin özlərinin də daxilində yer alan folder və fayllar daxil olmaqla bütün folder və fayllar haqqında məlumat əldə edə bilərik.
+
+>:bulb:**Not:** ls -r (reverse) vasitəsi ilə biz folder və fayllar haqqında məlumatlar sılamasını əks istiqamətdə əldə edə bilərik.
+
+---------
 ### Yeni folder yaratmaq üçün
 ```mkdir <folderName>```
 >:bulb:**Not:** mkdir-in açılımı Make Directory-dir.
