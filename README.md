@@ -18,9 +18,20 @@
 >:bulb:**Not:** Sadəcə cd command yazaraq olduğumuz path-dən aslılı olmayaraq User-ə qayıda bilərik.
 
 ---------
+### Yeni folder yaratmaq üçün
+```mkdir <folderName>```
+>:bulb:**Not:** mkdir-in açılımı Make Directory-dir.
+
+---------
+### Yeni folder yaratdıqdan sonra bir başa o folder-ə keçid etmək üçün
+```mkdir <folderName> && cd "$_"```
+>:bulb:**Not:** Burada $_ sonuncu istifadə edilən arqumenti təmsil edir.
+
+---------
 ### Verilən folder-i silmək üçün
-```rmdir <folderName>```
->:bulb:**Not:** Verilən folder-i silmək üçün.
+```rmdir <folderName>``` və ya ```rm -d folderName>``` və ya ```rm --dir folderName>```
+
+>:bulb:**Not:** Nəzərə alınmalıdır ki, bu əmr sadəcə daxili boş olan folder-ləri silmək üçün nəzərdə tutulmuşdur.
 
 ---------
 ### Hazırdaki folder daxilində fayl silmək üçün:
