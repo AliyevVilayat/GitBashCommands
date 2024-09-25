@@ -1,11 +1,31 @@
 # GitBashCommands
 
 ### <a href="https://git-scm.com/downloads" target="_blank"> GIT-i Endirmək üçün klikləyin</a>
---------
 
+
+--------
+### Hazırdaki path-i əldə etmək üçün:
+```pwd``` 
+>:bulb:**Not:** pwd-in açılımı Print Working Directory-dir.
+
+---------
+### Hazırda olduğumuz folder daxilində yer alan folder-ə daxil olmaq üçün:
+```cd <folderName> ```
+>:bulb:**Not:** cd-in açılımı Change Directory-dir.
+
+---------
+### Hazırda olduğumuz folder-dən bir üst folder-ə qayıtmaq üçün:
+```cd ..```
+>:bulb:**Not:** Sadəcə cd command yazaraq olduğumuz path-dən aslılı olmayaraq User-ə qayıda bilərik.
+
+---------
+### Verilən folder-i silmək üçün
+```rmdir <folderName>```
+>:bulb:**Not:** Verilən folder-i silmək üçün.
+
+---------
 ### Hazırdaki folder daxilində fayl silmək üçün:
 ```rm <fileName>```
-
 >:bulb:**Not:** Birdən çox fayl silmək üçün isə rm fileName1 fileName2 fileNameN şəklində command yazılmalıdır.
 
 ---------
