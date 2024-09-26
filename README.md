@@ -93,6 +93,11 @@
 >:bulb:**Not:** Nəzərə alınmalıdır ki, bu əmr sadəcə daxili boş olan folder-ləri silmək üçün nəzərdə tutulmuşdur.
 
 ---------
+### Verilmiş file-ı readonly etmək üçün:
+```chmod -w <folderName>```
+>:bulb:**Not:** Readonly olaraq təyin olunmuş fayl üzərində dəyişiklik etmək olmur.
+
+---------
 ### Hazırdaki folder daxilində fayl silmək üçün:
 ```rm <fileName>```
 >:bulb:**Not:** Birdən çox fayl silmək üçün isə rm fileName1 fileName2 fileNameN şəklində command yazılmalıdır.
