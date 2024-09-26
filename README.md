@@ -1,4 +1,4 @@
-# GitBash & Linux Commands
+# Linux Commands
 
 ### <a href="https://git-scm.com/downloads" target="_blank"> GIT-i Endirmək üçün klikləyin</a>
 
@@ -111,9 +111,15 @@
 ```rm -r <folderName>```
 
 ---------
+### Verilən folder-i və onun daxilindəki file-ları hər dəfə sorğu(y/n) ilə silmək üçün:
+```rm -ri <folderName>```
+
+---------
 ### Hazırdaki folder daxilində sorğusuz şəkildə(force) folder silmək üçün:
 ```rm -rf <folderName>```
 
+
+# GIT
 ---------
 ### Git-in hansı versiyada olduğunu öyrənmək üçün: 
 ```git -v & git --version```
