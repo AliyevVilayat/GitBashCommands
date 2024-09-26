@@ -107,7 +107,7 @@
 ```rm -f <fileName>```
 
 ---------
-### Verilən folder-i və onun daxilindəki fayları silmək üçün:
+### Verilən folder-i və onun daxilindəki file-ları silmək üçün:
 ```rm -r <folderName>```
 
 ---------
@@ -127,14 +127,14 @@
 >:bulb:**Not:** Qeyd etdiyimiz kimi --global keyword ilə biz informasiyaları sistemdə olan bütün Repository-lər üçün təyin edirik, Spesifik bir Repository üçün isə --global yazmadan bu command-ı işə salmalıyıq.
 
 ---------
-### Unstaged mərhələsində olan fayllar(və ya folder) stage mərhələsinə göndərmək üçün:
+### Unstaged mərhələsində olan file-lar(və ya folder) stage mərhələsinə göndərmək üçün:
 ```git add <fileName> ```
 >:bulb:**Not:** Bu command vasitilə biz spesifik bir faylı(və ya folder) unstaged mərhələsindən stage mərhələsinə göndərmiş oluruq. Bütün edilmiş dəyişiklikləri göndərmək üçün (git add .) , spesifik extensiona sahib olan faylları göndərmək üçün isə (git add *.extension).
 
 >:bulb:**Not:** Unstaged yəni track olunan lakin stage mərhələsinə göndərilməmiş faylların yer aldığı mərhələdir.
 
 ---------
-### Stage mərhələsinə add olunmuş faylları(və ya folder) yenidən unstage mərhələsinə göndərmək üçün:
+### Stage mərhələsinə add olunmuş file-lar(və ya folder) yenidən unstage mərhələsinə göndərmək üçün:
 ```git restore --staged <fileName>```
 
 ---------
