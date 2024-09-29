@@ -31,63 +31,72 @@
 >:bulb:**Not:** ls -r (reverse) vasitəsi ilə biz folder və fayllar haqqında məlumatlar sılamasını əks istiqamətdə əldə edə bilərik.
 
 ---------
-### Yeni folder yaratmaq üçün
+### Yeni folder yaratmaq üçün:
 ```mkdir <folderName>```
 >:bulb:**Not:** mkdir-in açılımı Make Directory-dir.
 
 ---------
-### Yeni folder yaratdıqdan sonra bir başa o folder-ə keçid etmək üçün
+### Yeni folder yaratdıqdan sonra bir başa o folder-ə keçid etmək üçün:
 ```mkdir <folderName> && cd "$_"```
 >:bulb:**Not:** Burada $_ sonuncu istifadə edilən arqumenti təmsil edir.
 
 ---------
-### Yeni file yaratmaq üçün
+### Ekrana yazı çıxarmaq üçün:
+```printf <text> və ya echo <text>```
+
+---------
+### Yeni file yaratmaq üçün:
 ```> <fileName>.extension```
 >:bulb:**Not:** Əgər həmin adda bir fayl mövcuddursa içindəkiləri siləcək.
 
 ---------
-### Yeni file yaratmaq üçün
+### Yeni file yaratmaq üçün:
 ```touch <fileName>.extension```
 >:bulb:**Not:** Uzantısını özümüz təyin edərək fayl yaradırıq. Əgər həmin adda bir fayl mövcuddursa sadəcə modified date dəyişiləcək, fayl daxili olduğu kimi qalacaq.
 
 ---------
-### Yeni file yaratmaq üçün
+### Yeni file yaratmaq üçün:
+```echo > <fileName>.extension```
+>:bulb:**Not:** Belə bir fayl mövcud deyilsə, fayl yaradır. Əks təqdirdə həmin fayl daxilini təmizləyərək daxilini boşaldır.
+
+---------
+### Yeni file yaratmaq və daxilinə yazı yazmaq üçün:
 ```echo <text> > <fileName>.extension```
 >:bulb:**Not:** Belə bir fayl mövcud deyilsə, fayl yaradır və daxilində bizim vermiş olduğumuz text-i yazır. Əks təqdirdə həmin fayl daxilini təmizləyərək bizim text-i ora əlavə edir.
 
 >:bulb:**Not:** Əgər biz mövcud fayla yazı yazdırmaq istəsək bu zaman > operatoru əvəzinə >> operatoru istifadə edəcəyik.
 
 ---------
-### Yeni file yaratmaq üçün
+### Yeni file yaratmaq üçün:
 ```cat > <fileName>.extension```
 >:bulb:**Not:** Fayl daxilində yazı yazmaq üçün terminal açılacaq və işimizi bitirdikdən sonra CTRL + D edərək prosesi dayandıra bilərik.
 
 ---------
-### File daxilindəki bütün yazıları əldə etmək üçün
+### File daxilindəki bütün yazıları əldə etmək üçün:
 ```cat <fileName>.extension```
 
 ---------
-### File daxilindəki yazıları səhifə-səhifə əldə etmək üçün
+### File daxilindəki yazıları səhifə-səhifə əldə etmək üçün:
 ```less <fileName>.extension```
 >:bulb:**Not:** Less əmri istifadəsi zamanı aşağı və yuxarı ox düymələri ilə səhifələr arası keçid mümkündür. q ilə açılan terminaldan çıxış edirik.
 
 ---------
-### File daxilindəki yazılardan ilk 10 sətri əldə etmək üçün
+### File daxilindəki yazılardan ilk 10 sətri əldə etmək üçün:
 ```head <fileName>.extension```
 >:bulb:**Not:** Əgər daha çox sətr göstərmək istəsək, -n <count> yazaraq bu əmri yenidən istifadə edəcəyik.
 
 ---------
-### File daxilindəki yazılardan son 10 sətri əldə etmək üçün
+### File daxilindəki yazılardan son 10 sətri əldə etmək üçün:
 ```tail <fileName>.extension```
 >:bulb:**Not:** Əgər daha çox sətr göstərmək istəsək, -n <count> yazaraq bu əmri yenidən istifadə edəcəyik.
 
 ---------
-### File daxilindəki hansısa string ifadəni axtarmaq üçün
+### File daxilindəki hansısa string ifadəni axtarmaq üçün:
 ```grep <searchedString> <fileName>.extension```
 >:bulb:**Not:** Nəticədə geriyə həmin sətrləri qaytaracaq.
 
 ---------
-### Verilən folder-i silmək üçün
+### Verilən folder-i silmək üçün:
 ```rmdir <folderName>``` və ya ```rm -d folderName>``` və ya ```rm --dir folderName>```
 
 >:bulb:**Not:** Nəzərə alınmalıdır ki, bu əmr sadəcə daxili boş olan folder-ləri silmək üçün nəzərdə tutulmuşdur.
@@ -161,6 +170,32 @@
 ```git pull```
 
 --------
+### Local-da olan branch-ləri gətirmək üçün:
+```git branch```
+
+--------
+### Remote-da olan branch-ləri gətirmək üçün:
+```git branch -r```
+
+--------
+### Həm local-da, həm də remote-da olan branch-ləri gətirmək üçün:
+```git branch -a```
+
+--------
+### Hazırda local-da olduğumuz branch daxilində branch yaratmaq üçün:
+```git branch <branchName>```
+
+--------
+### Branch-lar arası keçid etmək üçün:
+```git checkout <branchName>```
+
+--------
+### Branch yaradan zaman bir başa həmin branch-a keçid etmək üçün:
+```git checkout -b <branchName>```
+
+--------
+### Branch-i silmək üçün:
+```git branch -d <branchName>```
 
 
 
