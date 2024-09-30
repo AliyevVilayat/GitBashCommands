@@ -162,8 +162,12 @@
 ```git log```
 
 ---------
-### Commit olunmuş dəyişiklikləri remote-a göndərmək üçün:
+### Local repository-də Commit olunmuş dəyişiklikləri remote repository-ə göndərmək üçün:
 ```git push```
+
+---------
+### Remote-da olan repository-i Local-a gətirmək üçün:
+```git clone <repositoryLink>```
 
 ---------
 ### Remote-da olan dəyişiklikləri Local-a gətirmək üçün:
@@ -197,7 +201,10 @@
 ### Branch-i silmək üçün:
 ```git branch -d <branchName>```
 
-
+---------
+### Local repository-də yaranmış branch-i və üzərindəki dəyişikliyi remote repository-ə göndərmək üçün:
+```git push origin <branchName>```
+>:bulb:**Not:** Bu command nəticəsində branch-in hazırda remote-da çalışdığımız branch olduğunu bildirmir, sadəcə bu dəfəlik həmin branch-ə edilmiş dəyişikliklər göndərilir. Üzərində çalışdığımız branch-i git push -u origin <branchName> yazaraq bildiririk. Beləliklə bir sonraki push əməliyyatları həmin branch-ə olacaq.
 
 
 [Vilayat Aliyev](https://www.linkedin.com/in/vilayataliyev/)
@@ -205,6 +212,8 @@
 
 
 vim nano vi printf
+
+git fetch --prune
 
 
 
