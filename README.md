@@ -142,6 +142,13 @@
 >:bulb:**Not:** Qeyd etdiyimiz kimi --global keyword ilə biz informasiyaları sistemdə olan bütün Repository-lər üçün təyin edirik, Spesifik bir Repository üçün isə --global yazmadan bu command-ı işə salmalıyıq.
 
 ---------
+### Faylların vəziyyəti barəsində məlumat almaq üçün:
+```git status ```
+>:bulb:**Not:** Bu command vasitilə biz yeni əlavə olunmuş(izlənilməyən), dəyişiklik edilmiş lakin stage edilməmiş(unstaged), əlavə olunmuş və üzərində heçbir dəyişiklik edilməmiş fayllar, branch məlumatlarını gətirmiş oluruq.
+
+>:bulb:**Not:** Git Workflow-da mərhələlər bu şəkildədir. İzlənilməyən(Untracked), Dəyişdirilmiş, amma stage edilməmiş fayl(unstaged), Commit edilməyə hazır(Staged) və local repository-ə yazılmış(commited) mərhələləri.
+
+---------
 ### Unstaged mərhələsində olan file-lar(və ya folder) stage mərhələsinə göndərmək üçün:
 ```git add <fileName> ```
 >:bulb:**Not:** Bu command vasitilə biz spesifik bir faylı(və ya folder) unstaged mərhələsindən stage mərhələsinə göndərmiş oluruq. Bütün edilmiş dəyişiklikləri göndərmək üçün (git add .) , spesifik extensiona sahib olan faylları göndərmək üçün isə (git add *.extension).
@@ -154,14 +161,15 @@
 >:bulb:**Not:** Əgər bu command-ı işə saldıqdan sonra işləmirsə bu deməkdir ki köhnə versiya git istifadə edilir. Yuxarıdaki prosesi həyata keçirmək üçün alternativ yol olaraq (git reset HEAD fileName) və ya (git reset HEAD .) istifadə edilir.
 
 ---------
-### Stage mərhələsinə əlavə olunan local-daki dəyişiklikləri remote-a göndərmək üçün hazırlamaq və bu dəyişikliyi qısa izzah edərək rəy yazmaq üçün:
+### Stage mərhələsinə əlavə olunan local-daki dəyişiklikləri remote-a göndərmək üçün hazırlamaq, local repository-ə(commited mərhələ) göndərmək və bu dəyişikliyi qısa izzah edərək rəy yazmaq üçün:
 ```git commit -m "message"```
 >:bulb:**Not:** Bir neçə sətr rəy yazmaq üçün isə git commit -m "message1" -m "message2" 
 
 ---------
 ### Indiyədək local-da olan commit-ləri göstərmək üçün:
 ```git log```
-
+>:bulb:**Not:** Daha detaylı şəkildə məlumat almaq üçün (git log --patch)
+>
 ---------
 ### Local repository-də Commit olunmuş dəyişiklikləri remote repository-ə göndərmək üçün:
 ```git push```
