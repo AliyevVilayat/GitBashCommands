@@ -151,6 +151,7 @@
 ---------
 ### Stage mərhələsinə add olunmuş file-lar(və ya folder) yenidən unstage mərhələsinə göndərmək üçün:
 ```git restore --staged <fileName>```
+>:bulb:**Not:** Əgər bu command-ı işə saldıqdan sonra işləmirsə bu deməkdir ki köhnə versiya git istifadə edilir. Yuxarıdaki prosesi həyata keçirmək üçün alternativ yol olaraq (git reset HEAD fileName) və ya (git reset HEAD .) istifadə edilir.
 
 ---------
 ### Stage mərhələsinə əlavə olunan local-daki dəyişiklikləri remote-a göndərmək üçün hazırlamaq və bu dəyişikliyi qısa izzah edərək rəy yazmaq üçün:
