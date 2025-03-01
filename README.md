@@ -149,6 +149,11 @@
 >:bulb:**Not:** Git Workflow-da mərhələlər bu şəkildədir. İzlənilməyən(Untracked), Dəyişdirilmiş, amma stage edilməmiş fayl(unstaged), Commit edilməyə hazır(Staged) və local repository-ə yazılmış(commited) mərhələləri.
 
 ---------
+###  üçün:
+```git diff ```
+>:bulb:**Not:** Bu command vasitilə biz . Git diff --staged
+
+---------
 ### Unstaged mərhələsində olan file-lar(və ya folder) stage mərhələsinə göndərmək üçün:
 ```git add <fileName> ```
 >:bulb:**Not:** Bu command vasitilə biz spesifik bir faylı(və ya folder) unstaged mərhələsindən stage mərhələsinə göndərmiş oluruq. Bütün edilmiş dəyişiklikləri göndərmək üçün (git add .) , spesifik extensiona sahib olan faylları göndərmək üçün isə (git add *.extension).
